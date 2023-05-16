@@ -6,7 +6,58 @@
   <component name="ChangeListManager">
     <list default="true" id="a90d9313-a148-4860-8c34-2ca4e88ffd40" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/StrongTeamTestTask-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/StrongTeamTestTask-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/StrongTeamTestTaskApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/config/SecurityConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/config/StatisticalTaskSchedulerConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/controller/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/controller/NewsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/controller/NewsSourceController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/controller/StatisticalTaskController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/controller/TopicController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/dto/AuthRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/dto/NewsRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/dto/Statistics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/exception/EntityNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/exception/ExistingEntityCreationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/exceptionHandler/ErrorResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/exceptionHandler/RestExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/jwt/JwtAuthFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/jwt/JwtService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/jwt/JwtUserDetails.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/jwt/JwtUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/model/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/model/NewsSource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/model/StatisticsFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/model/Topic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/model/Users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/repository/NewsRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/repository/NewsSourceRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/repository/StatisticsFileRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/repository/TopicRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/NewsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/NewsSourceService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/StatisticalTaskService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/TopicService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/NewsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/NewsSourceServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/StatisticalTaskServiceImpl$StatisticalTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/StatisticalTaskServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/TopicServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.strongteamtesttask.StrongTeamTestTaskApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.strongteamtesttask.StrongTeamTestTaskApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/strongteamtesttask/StrongTeamTestTaskApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +168,7 @@
       <workItem from="1684162196300" duration="5000" />
       <workItem from="1684168320903" duration="6151000" />
       <workItem from="1684225729399" duration="15893000" />
-      <workItem from="1684248894096" duration="300000" />
+      <workItem from="1684248894096" duration="2013000" />
     </task>
     <servers />
   </component>
