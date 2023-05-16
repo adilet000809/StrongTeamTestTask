@@ -38,7 +38,9 @@ public class AuthController {
         if (!userService.existByUsername(authRequest.getUsername())) {
             if (isValidPassword(authRequest.getPassword())) {
                 userService.addUser(authRequest);
-                return ResponseEntity.ok(new HashMap<>().put("message", "User has been registered successfully."));
+                Map<String, Object> response = new HashMap<>();
+                response.put("messages", "User has been registered successfully.");
+                return ResponseEntity.ok(response);
             } else {
                 return ResponseEntity.badRequest().body(new ErrorResponse(HttpStatus.BAD_REQUEST.value(),
                         HttpStatus.BAD_REQUEST.getReasonPhrase(), "Password is too short and easy to guess."));

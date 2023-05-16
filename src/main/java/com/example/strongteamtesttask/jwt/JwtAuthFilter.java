@@ -3,6 +3,7 @@ package com.example.strongteamtesttask.jwt;
 import com.example.strongteamtesttask.exceptionHandler.ErrorResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.ExpiredJwtException;
+import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.security.SignatureException;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
@@ -51,7 +52,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
                     SecurityContextHolder.getContext().setAuthentication(authToken);
                 }
             }
-        } catch (UsernameNotFoundException | SignatureException | ExpiredJwtException e) {
+        } catch (UsernameNotFoundException | JwtException e) {
             ObjectMapper objectMapper = new ObjectMapper();
             ErrorResponse errorResponse = new ErrorResponse(HttpStatus.UNAUTHORIZED.value(), HttpStatus.UNAUTHORIZED.getReasonPhrase(), e.getMessage());
             response.setStatus(HttpStatus.UNAUTHORIZED.value());

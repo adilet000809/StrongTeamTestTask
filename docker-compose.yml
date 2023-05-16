@@ -12,7 +12,7 @@ services:
       - 'order-pgsql'
 
   app:
-    build: ./
+    image: 'registry.gitlab.com/adilet000809/strongtesttesttask:latest'
     container_name: 'StrongTeamTestTaskApp'
     ports:
       - '8080:8080'
