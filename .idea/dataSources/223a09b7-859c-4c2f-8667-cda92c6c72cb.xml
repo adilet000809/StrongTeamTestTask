@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>833</IntrospectionStateNumber>
+      <IntrospectionStateNumber>835</IntrospectionStateNumber>
       <ServerVersion>15.2</ServerVersion>
       <StartupTime>1684072061</StartupTime>
       <TimeZones>true ACDT
@@ -802,23 +802,24 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>833</IntrospectionStateNumber>
+      <IntrospectionStateNumber>835</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <Relations>sequence|table|16398|16399|1
 sequence|table|16412|16413|1
 sequence|table|16419|16420|1
+sequence|table|24576|24577|1
 sequence|table|16441|16442|1
 </Relations>
       <OwnerName>postgres</OwnerName>
     </database>
-    <role id="3" parent="1" name="pg_checkpoint">
-      <ObjectId>4544</ObjectId>
-    </role>
-    <role id="4" parent="1" name="pg_database_owner">
+    <role id="3" parent="1" name="pg_database_owner">
       <ObjectId>6171</ObjectId>
     </role>
-    <role id="5" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
+    <role id="4" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
+    </role>
+    <role id="5" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
     </role>
     <role id="6" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
@@ -826,29 +827,29 @@ sequence|table|16441|16442|1
 3375
 3377</RoleGrants>
     </role>
-    <role id="7" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
-    </role>
-    <role id="8" parent="1" name="pg_read_all_settings">
+    <role id="7" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="9" parent="1" name="pg_read_all_stats">
+    <role id="8" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
+    </role>
+    <role id="9" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
     </role>
     <role id="10" parent="1" name="pg_read_server_files">
       <ObjectId>4569</ObjectId>
     </role>
-    <role id="11" parent="1" name="pg_signal_backend">
+    <role id="11" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+    </role>
+    <role id="12" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="13" parent="1" name="pg_signal_backend">
       <ObjectId>4200</ObjectId>
     </role>
-    <role id="12" parent="1" name="pg_stat_scan_tables">
-      <ObjectId>3377</ObjectId>
-    </role>
-    <role id="13" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
-    </role>
-    <role id="14" parent="1" name="pg_write_server_files">
-      <ObjectId>4570</ObjectId>
+    <role id="14" parent="1" name="pg_checkpoint">
+      <ObjectId>4544</ObjectId>
     </role>
     <role id="15" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
@@ -4224,7 +4225,7 @@ sequence|table|16441|16442|1
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>833</IntrospectionStateNumber>
+      <IntrospectionStateNumber>835</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4241,49 +4242,61 @@ sequence|table|16441|16442|1
       <StateNumber>742</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="265" parent="262" name="topic_id_seq">
+    <sequence id="265" parent="262" name="statistics_file_id_seq">
+      <DataType>bigint|0s</DataType>
+      <ObjectId>24576</ObjectId>
+      <StateNumber>834</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <sequence id="266" parent="262" name="topic_id_seq">
       <DataType>bigint|0s</DataType>
       <ObjectId>16419</ObjectId>
       <StateNumber>743</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <sequence id="266" parent="262" name="users_id_seq">
+    <sequence id="267" parent="262" name="users_id_seq">
       <DataType>integer|0s</DataType>
       <ObjectId>16441</ObjectId>
       <StateNumber>817</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="267" parent="262" name="news">
+    <table id="268" parent="262" name="news">
       <ObjectId>16399</ObjectId>
       <StateNumber>744</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="268" parent="262" name="news_source">
+    <table id="269" parent="262" name="news_source">
       <ObjectId>16413</ObjectId>
       <StateNumber>744</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="269" parent="262" name="news_topics">
+    <table id="270" parent="262" name="news_topics">
       <ObjectId>16407</ObjectId>
       <StateNumber>745</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="270" parent="262" name="topic">
+    <table id="271" parent="262" name="statistics_file">
+      <ObjectId>24577</ObjectId>
+      <StateNumber>834</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="272" parent="262" name="topic">
       <ObjectId>16420</ObjectId>
       <StateNumber>745</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="271" parent="262" name="users">
+    <table id="273" parent="262" name="users">
       <ObjectId>16442</ObjectId>
       <StateNumber>817</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="272" parent="267" name="id">
+    <column id="274" parent="268" name="id">
       <DataType>bigint|0s</DataType>
       <DefaultExpression>nextval(&apos;news_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4291,33 +4304,33 @@ sequence|table|16441|16442|1
       <StateNumber>740</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="273" parent="267" name="content">
+    <column id="275" parent="268" name="content">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>740</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="274" parent="267" name="date_of_publish">
+    <column id="276" parent="268" name="date_of_publish">
       <DataType>timestamp(6)|0s</DataType>
       <Position>3</Position>
       <StateNumber>740</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="275" parent="267" name="title">
+    <column id="277" parent="268" name="title">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>740</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="276" parent="267" name="news_source_id">
+    <column id="278" parent="268" name="news_source_id">
       <DataType>bigint|0s</DataType>
       <Position>5</Position>
       <StateNumber>740</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <foreign-key id="277" parent="267" name="fkm8rp051vfrb2nhjwtdejmfp0n">
+    <foreign-key id="279" parent="268" name="fkm8rp051vfrb2nhjwtdejmfp0n">
       <ColNames>news_source_id</ColNames>
       <ObjectId>16426</ObjectId>
       <RefColNames>id</RefColNames>
@@ -4327,7 +4340,7 @@ sequence|table|16441|16442|1
       <RefTableName>news_source</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <index id="278" parent="267" name="news_pkey">
+    <index id="280" parent="268" name="news_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16405</ObjectId>
@@ -4336,14 +4349,14 @@ sequence|table|16441|16442|1
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="279" parent="267" name="news_pkey">
+    <key id="281" parent="268" name="news_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16406</ObjectId>
       <Primary>1</Primary>
       <StateNumber>740</StateNumber>
       <UnderlyingIndexId>16405</UnderlyingIndexId>
     </key>
-    <column id="280" parent="268" name="id">
+    <column id="282" parent="269" name="id">
       <DataType>bigint|0s</DataType>
       <DefaultExpression>nextval(&apos;news_source_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4351,14 +4364,14 @@ sequence|table|16441|16442|1
       <StateNumber>742</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="281" parent="268" name="name">
+    <column id="283" parent="269" name="name">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>742</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="282" parent="268" name="news_source_pkey">
+    <index id="284" parent="269" name="news_source_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16417</ObjectId>
@@ -4367,28 +4380,28 @@ sequence|table|16441|16442|1
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="283" parent="268" name="news_source_pkey">
+    <key id="285" parent="269" name="news_source_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16418</ObjectId>
       <Primary>1</Primary>
       <StateNumber>742</StateNumber>
       <UnderlyingIndexId>16417</UnderlyingIndexId>
     </key>
-    <column id="284" parent="269" name="news_id">
+    <column id="286" parent="270" name="news_id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>741</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="285" parent="269" name="topic_id">
+    <column id="287" parent="270" name="topic_id">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>741</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <foreign-key id="286" parent="269" name="fkf7dm39p6brwxbmobamsill7og">
+    <foreign-key id="288" parent="270" name="fkf7dm39p6brwxbmobamsill7og">
       <ColNames>news_id</ColNames>
       <ObjectId>16436</ObjectId>
       <RefColNames>id</RefColNames>
@@ -4398,7 +4411,7 @@ sequence|table|16441|16442|1
       <RefTableName>news</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <foreign-key id="287" parent="269" name="fknurqraks8rg9dj166tgtysl58">
+    <foreign-key id="289" parent="270" name="fknurqraks8rg9dj166tgtysl58">
       <ColNames>topic_id</ColNames>
       <ObjectId>16431</ObjectId>
       <RefColNames>id</RefColNames>
@@ -4408,7 +4421,7 @@ sequence|table|16441|16442|1
       <RefTableName>topic</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <index id="288" parent="269" name="news_topics_pkey">
+    <index id="290" parent="270" name="news_topics_pkey">
       <ColNames>news_id
 topic_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
@@ -4418,14 +4431,50 @@ topic_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="289" parent="269" name="news_topics_pkey">
+    <key id="291" parent="270" name="news_topics_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16411</ObjectId>
       <Primary>1</Primary>
       <StateNumber>741</StateNumber>
       <UnderlyingIndexId>16410</UnderlyingIndexId>
     </key>
-    <column id="290" parent="270" name="id">
+    <column id="292" parent="271" name="id">
+      <DataType>bigint|0s</DataType>
+      <DefaultExpression>nextval(&apos;statistics_file_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>834</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="293" parent="271" name="data">
+      <DataType>oid|0s</DataType>
+      <Position>2</Position>
+      <StateNumber>834</StateNumber>
+      <TypeId>26</TypeId>
+    </column>
+    <column id="294" parent="271" name="file_name">
+      <DataType>varchar(255)|0s</DataType>
+      <Position>3</Position>
+      <StateNumber>834</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="295" parent="271" name="statistics_file_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>24581</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>834</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="296" parent="271" name="statistics_file_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>24582</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>834</StateNumber>
+      <UnderlyingIndexId>24581</UnderlyingIndexId>
+    </key>
+    <column id="297" parent="272" name="id">
       <DataType>bigint|0s</DataType>
       <DefaultExpression>nextval(&apos;topic_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4433,14 +4482,14 @@ topic_id</ColNames>
       <StateNumber>743</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="291" parent="270" name="name">
+    <column id="298" parent="272" name="name">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>743</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="292" parent="270" name="topic_pkey">
+    <index id="299" parent="272" name="topic_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16424</ObjectId>
@@ -4449,14 +4498,14 @@ topic_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="293" parent="270" name="topic_pkey">
+    <key id="300" parent="272" name="topic_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16425</ObjectId>
       <Primary>1</Primary>
       <StateNumber>743</StateNumber>
       <UnderlyingIndexId>16424</UnderlyingIndexId>
     </key>
-    <column id="294" parent="271" name="id">
+    <column id="301" parent="273" name="id">
       <DataType>integer|0s</DataType>
       <DefaultExpression>nextval(&apos;users_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4464,21 +4513,21 @@ topic_id</ColNames>
       <StateNumber>817</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="295" parent="271" name="password">
+    <column id="302" parent="273" name="password">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>817</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="296" parent="271" name="username">
+    <column id="303" parent="273" name="username">
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>817</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="297" parent="271" name="users_pkey">
+    <index id="304" parent="273" name="users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16448</ObjectId>
@@ -4487,7 +4536,7 @@ topic_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="298" parent="271" name="users_pkey">
+    <key id="305" parent="273" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16449</ObjectId>
       <Primary>1</Primary>

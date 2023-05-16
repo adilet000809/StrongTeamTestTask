@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres:15'
+    container_name: 'StrongTeamTestTaskPostgresDb'
+    environment:
+      - 'POSTGRES_PASSWORD=root'
+      - 'POSTGRES_USER=postgres'
+      - 'POSTGRES_DB=postgres'
+    networks:
+      - 'order-pgsql'
+
+  app:
+    build: ./
+    container_name: 'StrongTeamTestTaskApp'
+    ports:
+      - '8080:8080'
+    networks:
+      - 'order-pgsql'
+    environment:
+      - 'SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/postgres'
+      - 'SPRING_DATASOURCE-USERNAME=postgres'
+      - 'SPRING_DATASOURCE-PASSWORD=root'
+
+networks:
+  order-pgsql:

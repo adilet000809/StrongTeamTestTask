@@ -82,7 +82,9 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-crypto:6.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:6.0.3" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:6.0.8" level="project" />
-    <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.9.1" level="project" />
+    <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt-api:0.11.5" level="project" />
+    <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt-impl:0.11.5" level="project" />
+    <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt-jackson:0.11.5" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.14.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.14.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.14.2" level="project" />

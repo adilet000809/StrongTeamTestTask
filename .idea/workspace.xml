@@ -4,24 +4,89 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a90d9313-a148-4860-8c34-2ca4e88ffd40" name="Changes" comment="" />
+    <list default="true" id="a90d9313-a148-4860-8c34-2ca4e88ffd40" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_api_0_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_impl_0_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_jackson_0_11_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/controller/StatisticalTaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/jwt/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/jwt/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/jwt/JwtUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/model/StatisticsFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/repository/StatisticsFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/service/StatisticalTaskService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/service/impl/StatisticalTaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/223a09b7-859c-4c2f-8667-cda92c6c72cb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/223a09b7-859c-4c2f-8667-cda92c6c72cb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/223a09b7-859c-4c2f-8667-cda92c6c72cb/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/223a09b7-859c-4c2f-8667-cda92c6c72cb/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StrongTeamTestTask.iml" beforeDir="false" afterPath="$PROJECT_DIR$/StrongTeamTestTask.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/StrongTeamTestTaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/StrongTeamTestTaskApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/config/StatisticalTaskSchedulerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/config/StatisticalTaskSchedulerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/repository/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/repository/NewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/repository/NewsSourceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/repository/NewsSourceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/repository/TopicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/repository/TopicRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/security/JwtConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/security/JwtTokenFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/security/JwtTokenProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/security/JwtUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/jwt/JwtUserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/security/JwtUserFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/service/impl/JwtUserDetailsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/service/impl/NewsSourceServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/service/impl/NewsSourceServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/strongteamtesttask/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/config/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/controller/AuthController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/controller/AuthController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/repository/NewsSourceRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/repository/NewsSourceRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/security/JwtConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/security/JwtTokenFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/security/JwtTokenProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/security/JwtUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/security/JwtUserFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/JwtUserDetailsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/NewsSourceServiceImpl$StatisticalTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/NewsSourceServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/NewsSourceServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/strongteamtesttask/service/impl/UserServiceImpl.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/StrongTeamTestTask" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
         <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
@@ -36,27 +101,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/abola/IdeaProjects/StrongTeamTestTask/src/main/java/com/example",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
-    "spring.configuration.checksum": "8da4f5d5e15db1058667a3e8273db8f6"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/abola/IdeaProjects/StrongTeamTestTask/src/main/java/com/example/strongteamtesttask&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8da4f5d5e15db1058667a3e8273db8f6&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\abola\IdeaProjects\StrongTeamTestTask\src\main\java\com\example\strongteamtesttask" />
       <recent name="C:\Users\abola\IdeaProjects\StrongTeamTestTask\src\main\java\com\example" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.StrongTeamTestTaskApplication">
     <configuration name="StrongTeamTestTaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="StrongTeamTestTask" />
@@ -65,6 +136,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      <item itemvalue="Spring Boot.StrongTeamTestTaskApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,7 +163,11 @@
       <option name="presentableId" value="Default" />
       <updated>1684088693656</updated>
       <workItem from="1684088694936" duration="689000" />
-      <workItem from="1684089434404" duration="855000" />
+      <workItem from="1684089434404" duration="6914000" />
+      <workItem from="1684124792090" duration="28324000" />
+      <workItem from="1684162196300" duration="5000" />
+      <workItem from="1684168320903" duration="6151000" />
+      <workItem from="1684225729399" duration="15018000" />
     </task>
     <servers />
   </component>

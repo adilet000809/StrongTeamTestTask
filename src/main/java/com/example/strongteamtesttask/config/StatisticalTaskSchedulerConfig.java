@@ -18,7 +18,7 @@ public class StatisticalTaskSchedulerConfig {
 
     @Bean
     public CronTrigger cronTrigger() {
-        return new CronTrigger("*/30 * * * * *");
+        return new CronTrigger("0 0 0 * * *");
     }
 
 }

@@ -2,8 +2,8 @@ package com.example.strongteamtesttask.controller;
 
 import com.example.strongteamtesttask.dto.AuthRequest;
 import com.example.strongteamtesttask.exceptionHandler.ErrorResponse;
+import com.example.strongteamtesttask.jwt.JwtService;
 import com.example.strongteamtesttask.model.Users;
-import com.example.strongteamtesttask.security.JwtTokenProvider;
 import com.example.strongteamtesttask.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -24,23 +24,28 @@ public class AuthController {
 
     private final UserService userService;
     private final AuthenticationManager authenticationManager;
-    private final JwtTokenProvider jwtTokenProvider;
+    private final JwtService jwtService;
 
-    public AuthController(UserService userService, AuthenticationManager authenticationManager, JwtTokenProvider jwtTokenProvider) {
+    public AuthController(UserService userService, AuthenticationManager authenticationManager, JwtService jwtService) {
         this.userService = userService;
         this.authenticationManager = authenticationManager;
-        this.jwtTokenProvider = jwtTokenProvider;
+        this.jwtService = jwtService;
     }
 
     @PostMapping("/register")
     public ResponseEntity<?> registerUser(@Valid @RequestBody AuthRequest authRequest) {
 
-        if (isValidPassword(authRequest.getPassword())) {
-            userService.addUser(authRequest);
-            return ResponseEntity.ok("User has been registered successfully.");
+        if (!userService.existByUsername(authRequest.getUsername())) {
+            if (isValidPassword(authRequest.getPassword())) {
+                userService.addUser(authRequest);
+                return ResponseEntity.ok(new HashMap<>().put("message", "User has been registered successfully."));
+            } else {
+                return ResponseEntity.badRequest().body(new ErrorResponse(HttpStatus.BAD_REQUEST.value(),
+                        HttpStatus.BAD_REQUEST.getReasonPhrase(), "Password is too short and easy to guess."));
+            }
         } else {
             return ResponseEntity.badRequest().body(new ErrorResponse(HttpStatus.BAD_REQUEST.value(),
-                    HttpStatus.BAD_REQUEST.getReasonPhrase(), "Password is too short and easy to guess."));
+                    HttpStatus.BAD_REQUEST.getReasonPhrase(), String.format("User with username %s already exist.", authRequest.getUsername())));
         }
 
     }
@@ -52,7 +57,7 @@ public class AuthController {
                 authRequest.getUsername(), authRequest.getPassword()));
 
         Users user = userService.findByUserName(authRequest.getUsername());
-        String token = jwtTokenProvider.createToken(authRequest.getUsername());
+        String token = jwtService.generateToken(authRequest.getUsername());
 
         Map<String, Object> response = new HashMap<>();
         response.put("user", user);

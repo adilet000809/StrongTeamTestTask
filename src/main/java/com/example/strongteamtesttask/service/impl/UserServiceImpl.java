@@ -9,7 +9,6 @@ import com.example.strongteamtesttask.service.UserService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -36,6 +35,11 @@ public class UserServiceImpl implements UserService {
     public Users findByUserName(String username) {
         return userRepository.findByUsername(username)
                 .orElseThrow(() -> new EntityNotFoundException(String.format("User with username: %s not found.", username)));
+    }
+
+    @Override
+    public boolean existByUsername(String username) {
+        return userRepository.existsByUsername(username);
     }
 
 }
